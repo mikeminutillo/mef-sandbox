@@ -1,0 +1,20 @@
+> mefx [files and directories] [action] [options]
+
+Files and Directories
+> mefx /file:MyAddIn.dll /directory:\Program\AddIns [action...]
+
+WARNING! Ensure each .dll or .exe is loaded only once
+
+Actions
+/parts            Lists all of the parts
+/imports          Lists the parts which are imported
+/exports          Lists the parts which are exported
+/importers        Accepts a contract name and tells you parts that import it
+/exporters        Accepts a contract name and tells you parts that export it
+/rejected         Lists parts which cannot be composed
+/causes           Lists root cause parts
+
+Options
+/verbose          generally adds a lot more info
+/whitelist        refers to a file for contracts to ignore during /rejected and /causes
+
